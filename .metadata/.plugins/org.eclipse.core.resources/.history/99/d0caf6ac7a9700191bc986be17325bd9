@@ -1,0 +1,12 @@
+package java2d;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Instancier une JFrame
+		
+		// TODO Afficher la JFrame
+
+	}
+
+}
