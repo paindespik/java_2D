@@ -1,6 +1,11 @@
 package java2d;
-import java.awt.*;
+import java.awt.Color;
+import java.awt.GradientPaint;
 
+import java.awt.Font;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.Image;
 import java.io.File;
 import java.io.IOException;
 
@@ -11,8 +16,8 @@ public class Panneau extends JPanel{
 	public int a=0;
 	public void paintComponent(Graphics g) {
 		a++;
-		int x1 = this.getWidth()/6;
-		int y1 = this.getHeight()/6;
+		int x1 = this.getWidth()/4;
+		int y1 = this.getHeight()/4;
 		//Je verrais cette phrase à chaque fois que cette méthode sera invoquée
 		System.out.println("Je suis exécutée une fois! a = " + a);
 		
@@ -53,27 +58,10 @@ public class Panneau extends JPanel{
 		
 		*/
 		
-	    Graphics2D g2d = (Graphics2D)g;
-	    GradientPaint gp, gp2, gp3, gp4, gp5, gp6; 
-	    gp = new GradientPaint(0, 0, Color.RED, 1*x1, 0, Color.magenta, true);
-	    gp2 = new GradientPaint(1*x1, 0, Color.magenta, 2*x1, 0, Color.blue, true);
-	    gp3 = new GradientPaint(2*x1, 0, Color.blue, 3*x1, 0, Color.green, true);
-	    gp4 = new GradientPaint(3*x1, 0, Color.green, 4*x1, 0, Color.yellow, true);
-	    gp5 = new GradientPaint(4*x1, 0, Color.yellow, 5*x1, 0, Color.orange, true);
-	    gp6 = new GradientPaint(5*x1, 0, Color.orange, 6*x1, 0, Color.red, true);
-
-	    g2d.setPaint(gp);
-	    g2d.fillRect(0, 0, x1, this.getHeight());               
-	    g2d.setPaint(gp2);
-	    g2d.fillRect(x1, 0, x1, this.getHeight());
-	    g2d.setPaint(gp3);
-	    g2d.fillRect(2*x1, 0, x1, this.getHeight());
-	    g2d.setPaint(gp4);
-	    g2d.fillRect(3*x1, 0, x1, this.getHeight());
-	    g2d.setPaint(gp5);
-	    g2d.fillRect(4*x1, 0, x1, this.getHeight());
-	    g2d.setPaint(gp6);
-	    g2d.fillRect(5*x1, 0, x1, this.getHeight());
+		Graphics2D g2d = (Graphics2D)g;
+		GradientPaint gp = new GradientPaint(0, 0, Color.RED, 30, 30, Color.cyan, true);
+		g2d.setPaint(gp);
+		g2d.fillRect(0, 0, this.getWidth(), this.getHeight());
 		
 		
 		
