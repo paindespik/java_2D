@@ -8,28 +8,27 @@ public class fenetre extends JFrame{
 	public fenetre() {
 		
 		// TODO Instancier une JFrame
-		this.setSize(100, 150);
-		this.setTitle("votre première fenêtre SWING avec Objis");
-		this.setLocation(400,400);
-		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		this.setResizable(true);
-		this.setAlwaysOnTop(false);
+		JFrame maFenetre1 = new JFrame();	
+		maFenetre1.setSize(400, 300);
+		maFenetre1.setTitle("votre première fenêtre SWING avec Objis");
+		maFenetre1.setLocation(400,400);
+		maFenetre1.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		maFenetre1.setResizable(false);
+		maFenetre1.setAlwaysOnTop(false);
 		
-	/*	// Instanciation d'un objet JPanel
+		// Instanciation d'un objet JPanel
 		JPanel pan = new JPanel();
 		//définition de sa couleur de fond
 		pan.setBackground(Color.ORANGE);
 		// On prévient notre JFrame que notre JPanel sera sont content pane
 		this.setContentPane(pan);
 		
-		*/
 		
-		this.setContentPane(new Panneau());
 		
 		
 		
 		
 		// TODO Afficher la JFrame
-		this.setVisible(true);
+		maFenetre1.setVisible(true);
 	}
 }

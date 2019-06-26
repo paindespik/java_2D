@@ -6,9 +6,10 @@ import javax.swing.JPanel;
 public class fenetre extends JFrame{
 
 	public fenetre() {
+		int TF=150;
 		
 		// TODO Instancier une JFrame
-		this.setSize(100, 150);
+		this.setSize(TF, TF);
 		this.setTitle("votre première fenêtre SWING avec Objis");
 		this.setLocation(400,400);
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

@@ -1,0 +1,17 @@
+package java2d;
+import java.awt.Color;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+public class fenetre extends JFrame{
+
+	  public fenetre(){                
+		    this.setTitle("Ma première fenêtre Java");
+		    this.setSize(100, 150);
+		    this.setLocationRelativeTo(null);               
+		    this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		    this.setContentPane(new Panneau());
+
+		    this.setVisible(true);
+		  } 
+}
