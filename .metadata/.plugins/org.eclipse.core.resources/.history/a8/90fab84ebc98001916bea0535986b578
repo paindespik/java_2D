@@ -9,8 +9,8 @@ import javax.swing.JPanel;
 
 public class Panneau extends JPanel{
 	public int a=0;
-	private int posX=0;
-	private int posY=0;
+	private int posX=-50;
+	private int posY=-50;
 	public void paintComponent(Graphics g) {
 		a++;
 		int x1 = this.getWidth()/6;
@@ -18,9 +18,9 @@ public class Panneau extends JPanel{
 		//Je verrais cette phrase à chaque fois que cette méthode sera invoquée
 		System.out.println("Je suis exécutée une fois! a = " + a);
 		
-		//TODO rectangle centré : 
-		g.setColor(Color.blue);
-		g.fillRect(0, 0, this.getWidth(), this.getHeight());
+		// TODO rectangle centré : 
+		
+		//g.drawRect(x1, y1, x1*2, y1*2);
 		
 		// TODO croix sur toute la fenetre :
 		

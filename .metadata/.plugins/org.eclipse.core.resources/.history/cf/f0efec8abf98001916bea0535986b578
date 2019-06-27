@@ -37,55 +37,22 @@ public class fenetre extends JFrame{
 	}
 	
 	private void go() {
-		
-		boolean backX=false;
-		boolean backY=true;
-		
-		
 		for (;;) {
 			int posX = pan.getPosX();
 			int posY = pan.getPosY();
-			int coinPosX=pan.getWidth()-pan.getPosX();
-			int coinPosY=pan.getHeight()-pan.getPosY();
-			
-			if(posX<1) {
-				backX=false;
-			}
-			if(posY<1) {
-				backY=false;
-			}
-			if(coinPosX<51) {
-				backX=true;
-			}
-			if (coinPosY<51) {
-				backY=true;
+			if(posX==pan.getWidth()) {
+				posX=-50;
+				posY=-50;
 			}
 			
 			
-			
-			
-			
-			if(backX==false) {
-				posX++;
-			}
-			else{
-				posX--;
-			}
-			
-			if(backY==false) {
-				posY++;
-			}
-			else {
-				posY--;
-			}
-			
-			
-			
+			posX++;
+			posY++;
 			pan.setPosX(posX);
 			pan.setPosY(posY);
 			pan.repaint();
 			try {
-				Thread.sleep(10);
+				Thread.sleep(20);
 			}
 			catch(InterruptedException e) {
 				e.printStackTrace();
