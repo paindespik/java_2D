@@ -22,7 +22,7 @@ public class Panneau extends JPanel{
 		g.setColor(Color.blue);
 		g.fillRect(0, 0, this.getWidth(), this.getHeight());
 		
-		// TODO croix sur toute la fenetre :
+		// TODO croix sur toute la fenêtre :
 		
 	/*	g.drawLine(0, 0, this.getWidth(), this.getHeight());
 		g.drawLine(this.getWidth(), 0, 0, this.getHeight());
