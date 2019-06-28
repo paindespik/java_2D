@@ -10,7 +10,7 @@ import javax.swing.JPanel;
 
 public class fenetre extends JFrame{
 	Panneau pan =new Panneau();
-	JButton bouton = new JButton("remettre au centre");
+	JButton bouton = new JButton("beuleu");
 	JPanel Jbouton=new JPanel();
 	public fenetre() {
 		
