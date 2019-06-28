@@ -45,8 +45,9 @@ public class fenetre extends JFrame{
 		this.setVisible(true);
 		go();
 	}
-	
+	boolean	work=true;
 	private void go() {
+		
 		
 		boolean backX=false;
 		boolean backY=true;
@@ -57,8 +58,10 @@ public class fenetre extends JFrame{
 			
 			bouton.addActionListener(new ActionListener() {
 				public void actionPerformed(ActionEvent event) {
-					pan.setPosX(pan.getWidth()/2);
-					pan.setPosY(pan.getHeight()/2);
+					if (work==true)
+						work=false;
+					else
+						work=true;
 				}
 			});
 			
@@ -87,20 +90,22 @@ public class fenetre extends JFrame{
 			
 			
 			
-			
-			if(backX==false) {
-				posX++;
+			if(work==true) {
+				if(backX==false) {
+					posX++;
+				}
+				else{
+					posX--;
+				}
+				
+				if(backY==false) {
+					posY++;
+				}
+				else {
+					posY--;
+				}
 			}
-			else{
-				posX--;
-			}
-			
-			if(backY==false) {
-				posY++;
-			}
-			else {
-				posY--;
-			}
+				
 			
 			
 			
