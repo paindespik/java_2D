@@ -3138,6 +3138,7 @@ org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.
 !MESSAGE Unexpected error while loading repository template extensions
 !SUBENTRY 1 org.eclipse.mylyn.tasks.core 4 0 2019-06-28 12:39:23.655
 !MESSAGE Could not load repository template extension contributed by 'org.eclipse.mylyn.bugzilla.ide' with connectorKind 'bugzilla'
+<<<<<<< HEAD
 !SESSION 2019-06-28 12:42:21.374 -----------------------------------------------
 eclipse.buildId=4.11.0.I20190307-0500
 java.version=11.0.3
@@ -3302,3 +3303,5 @@ org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.
 !MESSAGE Unexpected error while loading repository template extensions
 !SUBENTRY 1 org.eclipse.mylyn.tasks.core 4 0 2019-06-28 15:13:05.699
 !MESSAGE Could not load repository template extension contributed by 'org.eclipse.mylyn.bugzilla.ide' with connectorKind 'bugzilla'
+=======
+>>>>>>> 31834eeb19cd9fae9cda8dfc2f57cb9162ad43ce
