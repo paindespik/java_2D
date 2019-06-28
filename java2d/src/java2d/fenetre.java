@@ -1,10 +1,17 @@
 package java2d;
+import java.awt.BorderLayout;
 import java.awt.Color;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
 public class fenetre extends JFrame{
 	Panneau pan =new Panneau();
+	JButton bouton = new JButton("remettre au centre");
+	JPanel Jbouton=new JPanel();
 	public fenetre() {
 		
 		
@@ -26,7 +33,10 @@ public class fenetre extends JFrame{
 		
 		*/
 		
-		this.setContentPane(pan);
+		this.add(pan,BorderLayout.CENTER);
+		
+		this.add(bouton,BorderLayout.SOUTH);
+		
 		
 		
 		
@@ -43,6 +53,19 @@ public class fenetre extends JFrame{
 		
 		
 		for (;;) {
+			
+			
+			bouton.addActionListener(new ActionListener() {
+				public void actionPerformed(ActionEvent event) {
+					pan.setPosX(pan.getWidth()/2);
+					pan.setPosY(pan.getHeight()/2);
+				}
+			});
+			
+			
+			
+			
+			
 			int posX = pan.getPosX();
 			int posY = pan.getPosY();
 			int coinPosX=pan.getWidth()-pan.getPosX();
